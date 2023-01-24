@@ -1,0 +1,13 @@
+<section class="col-3 container-contacto">
+    <section class="form-group">
+    <label for="men">Mensaje:</label>
+    <section [(ngModel)]="mensaje">
+    <mat-form-field appearance="fill">
+        <textarea matInput></textarea>
+    </mat-form-field>
+    </section>
+    </section>
+    <section class="m-3">
+    <button mat-raised-button color="warn" (click)="EnviarMensaje()">Enviar</button>
+    </section>
+</section>

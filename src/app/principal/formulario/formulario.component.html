@@ -1,0 +1,28 @@
+<section class="container">
+    <form (ngSubmit)="onSubmit()">
+    <section class="form-group m-2">
+        <p>
+            <mat-form-field appearance="fill">
+              <mat-label>Name</mat-label>
+              <input matInput required [(ngModel)]="datos.name" name="name">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              
+            </mat-form-field>
+          </p>
+    </section>
+    
+    <section class="form-group m-2">
+        <p>
+            <mat-form-field appearance="fill">
+              <mat-label>Username</mat-label>
+              <input matInput required [(ngModel)]="datos.username" name="username">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              
+            </mat-form-field>
+          </p>
+    </section>
+    <section class="form-group m-2">
+    <button mat-raised-button color="accent">Registrarse</button>
+    </section>
+    </form>
+</section>
